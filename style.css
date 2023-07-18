@@ -124,6 +124,11 @@ p.introduction {
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
+.homeButton a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .container2 {
   width: 100%;
@@ -238,11 +243,14 @@ img.profile {
   align-items: center;
   flex-wrap: wrap;
 }
-.project {
-  margin: 1em 2em;
+.dom-picture{
+  height: 20vh;
+  width: 100%;
 }
-.RockPaperScisso {
+.project{
+  margin: 1em 2em;
   border: 1px solid;
+  border-radius: 12px;
   height: 12rem;
   width: 12rem;
   display: flex;
@@ -250,8 +258,8 @@ img.profile {
   text-align: center;
   flex-direction: column;
   padding: 0.2rem 2rem 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
 }
 .LoginRegister {
   display: flex;

@@ -33,17 +33,17 @@ nav {
   display: flex;
   margin-left: 30em;
 }
-.menu i.bx{
+.menu i.bx {
   color: white;
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
-.hamburger{
+.hamburger {
   display: none;
   cursor: pointer;
 }
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -151,9 +151,11 @@ img.profile {
 }
 .aboutContainer {
   border: 1px solid wheat;
+  width: 50%;
   border-radius: 21px;
   text-align: center;
   padding: 1em 6em 6em;
+  margin: 0 1em;
 }
 .container3 {
   width: 100%;
@@ -236,7 +238,7 @@ img.profile {
   align-items: center;
   flex-wrap: wrap;
 }
-.project{
+.project {
   margin: 1em 2em;
 }
 .RockPaperScisso {
@@ -288,7 +290,7 @@ h1.ProjectTitle {
   width: 100%;
   border: 1px solid;
   padding: 1em;
-  margin-right: 1em;
+  margin: 0 1em;
   border-radius: 12px;
 }
 .ContactMe {
@@ -432,27 +434,32 @@ p.footer-content {
 }
 
 /*RESPONSVEVESS WITH THE HELPS OF MEDAI QUERY*/
-@media only screen and (max-width:600px) {
-  .contactImage {
-    width: 0%;
-    opacity: 0;
+@media only screen and (max-width: 600px) {
+  .discription {
+    margin-left: 2em;
   }
-  .ContactContainer{
+  .contactme{
+    padding: 0;
+  }
+  .contactImage {
+    display: none;
+  }
+  .ContactContainer {
     width: 100%;
   }
-  .hamburger{
+  .hamburger {
     display: block;
   }
-  .hamburger.active .bar:nth-child(2){
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .nav-list{
+  .nav-list {
     position: fixed;
     left: 100%;
     top: 47px;
@@ -464,46 +471,53 @@ p.footer-content {
     text-align: center;
     transition: 0.3s;
   }
-  .nav-items{
+  .nav-items {
     margin: 16px 0;
   }
-  .nav-list .active{
+  .nav-list .active {
     left: 0;
   }
-  .contactme{
+  .contactme {
     width: 100%;
   }
-  .skillsContent{
+  .skillsContent {
     margin: 0 3em;
   }
-  .container5{
+  .container5 {
     text-align: center;
   }
-  .menu i.bx{
+  .menu i.bx {
     display: flex;
   }
-  nav{
+  nav {
     justify-content: space-between;
+  }
+  .aboutContainer {
+    padding: 1em 2em 0em;
+    width: 90%;
   }
 }
 
-@media only screen and (max-width:945px) {
-  nav{
+@media only screen and (max-width: 945px) {
+  .discription {
+    margin-left: 2em;
+  }
+  nav {
     justify-content: space-between;
   }
-  .hamburger{
+  .hamburger {
     display: block;
   }
-  .hamburger.active .bar:nth-child(2){
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
-  .nav-list{
+  .nav-list {
     position: fixed;
     left: -100%;
     top: 47px;
@@ -515,15 +529,17 @@ p.footer-content {
     text-align: center;
     transition: 0.3s;
   }
-  .nav-items{
+  .nav-items {
     margin: 16px 0;
   }
-  .nav-list.active{
+  .nav-list.active {
     left: 0;
-
   }
   .contactImage {
-    width: 0%;
-    opacity: 0;
+    display: none;
+  }
+  .aboutContainer {
+    padding: 1em 2em 0em;
+    width: 90%;
   }
 }
